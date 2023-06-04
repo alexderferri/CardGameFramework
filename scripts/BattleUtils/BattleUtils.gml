@@ -1,0 +1,4 @@
+enum Target {
+	ME,
+	OPPONENT
+}
