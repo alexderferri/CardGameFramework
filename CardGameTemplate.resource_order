@@ -1,0 +1,16 @@
+{
+  "FolderOrderSettings": [],
+  "ResourceOrderSettings": [
+    {"name":"__GMA_SETTINGS__","order":1,"path":"scripts/__GMA_SETTINGS__/__GMA_SETTINGS__.yy",},
+    {"name":"BattleUtils","order":4,"path":"scripts/BattleUtils/BattleUtils.yy",},
+    {"name":"Events","order":1,"path":"scripts/Events/Events.yy",},
+    {"name":"PubSubPattern","order":2,"path":"scripts/PubSubPattern/PubSubPattern.yy",},
+    {"name":"CardsDatabase","order":7,"path":"scripts/CardsDatabase/CardsDatabase.yy",},
+    {"name":"oPersitanceData","order":3,"path":"objects/oPersitanceData/oPersitanceData.yy",},
+    {"name":"oGameManager","order":1,"path":"objects/oGameManager/oGameManager.yy",},
+    {"name":"Actions","order":3,"path":"scripts/Actions/Actions.yy",},
+    {"name":"oPlayer","order":2,"path":"objects/oPlayer/oPlayer.yy",},
+    {"name":"DataLoadingSaving","order":5,"path":"scripts/DataLoadingSaving/DataLoadingSaving.yy",},
+    {"name":"Card","order":6,"path":"scripts/Card/Card.yy",},
+  ],
+}

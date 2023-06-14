@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "Skills",
+  "name": "Card",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {

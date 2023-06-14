@@ -1,6 +1,6 @@
 
 // Skill Interface
-function ISkill(_owner) : constructor {
+function ISkill(_owner) constructor {
 	
 	owner = _owner;
 	
@@ -16,8 +16,8 @@ function ISkill(_owner) : constructor {
 	ignoreSkills = [{}];
 }
 
-function AllIn() : ISkill(_owner) {
-	// Not Implemented
+
+function AllIn(_owner) : ISkill(_owner) constructor {
 	
 	owner = _owner;
 	
@@ -34,18 +34,18 @@ function AllIn() : ISkill(_owner) {
 	
 }
 
-function ArcanePower() : ISkill {
+function ArcanePower(_owner) : ISkill(_owner) constructor {
 	// Not Implemented
 }
 
-function Barrage() : ISkill {
+function Barrage(_owner) : ISkill(_owner)  constructor {
 	// Not Implemented
 }
 
-function Batter() : ISkill {
+function Batter(_owner) : ISkill(_owner)  constructor {
 	// Not Implemented
 }
 
-function Bombardment() : ISkill {
+function Bombardment(_owner) : ISkill(_owner)  constructor {
 	// Not Implemented
 }

@@ -7,50 +7,37 @@ cardData = undefined;
 // Card Owner ID
 owner    = undefined;
 
-// Card Data
-enum AttackType {
-	MELEE,
-	RANGED,
-	MAGIC,
-	RANDOM_DMG,
-	HEAL,
-	HEAL_GROUP
-}
 
-enum CardFaction {
-	 CHAOS,
-	 NATURE,
-	 BALANCE,
-	 FORTUNE,
-	 WAR
-}
 
-function CardData(_initData = {} /*Struct|JSON*/) constructor {
+function TakeDamage(_amount) {
 	
-	// ============== Constructor ===============
+	assert_greater_than_or_equal(_amount, 0, "Damage cannot be negative.");
 	
-	// Faction {CardFaction}
-	faction        = _initData.faction ?? CardFaction.NATURE;
 	
-	// Card's HP {int}
-	HP             = _initData.HP ?? 5;  
-	
-	// Attack Type {AttackType}
-	attackType     = _initData.attackType ?? AttackType.MELEE;
-	
-	// Attack Modifier {modifier struct}
-	attackModifier = _initData.attackModifier ?? {};
-	
-	// Skills {ISkill struct}
-	skills         = _initData.skills ?? [{}];
-	
-	// Armor {armor struct}
-	armor          = _initData.armor ?? {};
-	
+	if (_amount >= 0) {
+		// Take Damage and calculate HP
+		cardData.HP = max(cardData.HP - _amount, 0);
+		
+		return true;
+		
+	} else {
+		return false;
+	}
 
 }
 
-
-
-
-
+function Heal(_amount) {
+	
+	assert_greater_than_or_equal(_amount, 0, "Heal amount cannot be negative.");
+	
+	if (_amount >= 0) {
+		// Heal and calculate HP
+		cardData.HP += _amount;
+		
+		return true;
+		
+	} else {
+		return false;
+	}
+	
+}
